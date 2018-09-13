@@ -1,10 +1,42 @@
+/* Generelle settings */
 :root {
     --colorOne: #0b0d0e;
+    --fontColor: white;
+    font-size: 62.5%;
+    --fontOne: 'Amatic SC', cursive;
+    --fontTwo: 'Economica', sans-serif;
 }
 
 body {
     margin: 0 auto;
 }
+
+main {
+    background-color: var(--colorOne);
+}
+
+h1 {
+    font-size: 4em;
+    color: var(--fontColor);
+    font-family: var(--fontOne);
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--fontColor);
+}
+
+p {
+    font-size: 2em;
+    color: var(--fontColor);
+}
+
+li {
+    color: var(--fontColor);
+    font-size: 2em;
+}
+
+/*gennerelle settings slut*/
 
 .frontpage {
     width: 100vw;
@@ -14,10 +46,15 @@ body {
 
 section {
     background-color: var(--colorOne);
+    margin: 0 5%;
 }
 
 section img {
     width: 100%;
+}
+
+section h1 {
+    text-align: center;
 }
 
 /*forsiden*/
@@ -45,7 +82,32 @@ section img {
 }
 
 button {
-    width: 200px;
-    height: 50px;
-margin: 10px;
+    width: 250px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50px;
+    font-size: 3em;
+    font-family: var(--fontOne);
+    font-weight: bold;
+}
+
+.data_courses {
+    display: grid;
+    grid-gap: 20px;
+}
+
+@media screen and (min-width:480px) {
+
+    .data_courses {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media screen and (min-width:1200px) {
+
+    .data_courses {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
