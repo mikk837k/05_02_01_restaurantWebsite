@@ -12,7 +12,9 @@ async function hentJson() {
     visRetter();
 }
 
-document.querySelectorAll(".menu - item").forEach(knap => {
+//Nedestående del omhandler kun filtrering som endnu ikke er defineret
+
+document.querySelectorAll(".menu-item").forEach(knap => {
     knap.addEventListener("click", filtrering)
 });
 
@@ -23,7 +25,7 @@ function filtrering() {
     visRetter();
 }
 
-
+//Filtrering Slut
 
 function visRetter() {
     let temp = document.querySelector(".data_template");
@@ -32,8 +34,6 @@ function visRetter() {
     retter.forEach(ret => {
         if (ret.kategori == kategoriFilter || kategoriFilter == "alle") {
             let klon = temp.cloneNode(true).content;
-            klon.querySelector(".data_id").textContent = ret.id;
-            klon.querySelector(".data_kategori").textContent = "Kategori: " + ret.kategori;
             klon.querySelector("img").src = "img/sm/" + ret.billede + ".jpg";
             klon.querySelector("h2").textContent = ret.navn;
             klon.querySelector(".data_desription_short").textContent = ret.kortbeskrivelse;

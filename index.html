@@ -9,15 +9,15 @@
 </head>
 
 <body>
-    <header>
-        <img src="img/logo/lillelogo.png" alt="italiensk pizzaria logo angelo">
-    </header>
     <main>
-        <nav>
-            <button class="box1">MENU</button>
-            <button class="box2">BOOKING</button>
-            <button class="box3">ABOUT US</button>
-        </nav>
+        <div class="frontpage">
+            <img class="logo" src="img/logo/lillelogo.png" alt="italiensk pizzaria logo angelo">
+            <div>
+                <button class="box1">MENU</button>
+                <button class="box2">BOOKING</button>
+                <button class="box3">ABOUT US</button>
+            </div>
+        </div>
         <section id="menuPage">
             <h1>MENU</h1>
             <div class="data_courses">
@@ -27,45 +27,65 @@
                     <img src="" alt="">
                     <h2></h2>
                     <p class="data_desription_short"></p>
-                    <p class="data_price"></p>
                     <p class="data_description_long"></p>
-                    <p class="data_place_of_origin"></p>
-                    <p class="data_kategori"></p>
-                    <p class="data_id"></p>
+                    <p class="data_price"></p>
                 </div>
             </template>
         </section>
+
         <section id="bookingPage">
             <h1>BOOKING</h1>
             <article>
 
             </article>
-
         </section>
         <section id="aboutusPage">
             <h1>ABOUT US</h1>
             <article>
                 <div class="txt">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur, praesentium dolorem quaerat modi impedit nihil saepe debitis molestiae obcaecati inventore pariatur nobis veritatis non eveniet, deserunt numquam nulla similique?
-                </div>
-                <div class="mapouter">
-                    <div class="gmap_canvas"><iframe width="350" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=lygten%2016&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/">pureblack.de</a></div>
-                    <style>
-                        .mapouter {
-                            text-align: right;
-                            height: 250px;
-                            width: 350px;
-                        }
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur, praesentium dolorem quaerat modi impedit nihil saepe debitis molestiae obcaecati inventore pariatur nobis veritatis non eveniet, deserunt numquam nulla similique?</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur, praesentium dolorem quaerat modi impedit nihil saepe debitis molestiae obcaecati inventore pariatur nobis veritatis non eveniet, deserunt numquam nulla similique?</p>
 
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 250px;
-                            width: 350px;
-                        }
-                    </style>
                 </div>
+                <div>
+                    <h2>ADDRESS:</h2>
+                    <ul>
+                        <li>Lygten 16, 2400 København K</li>
+                    </ul>
+                    <h2>TELEPHONE:</h2>
+                    <ul>
+                        <li>+45 1234 5678</li>
+                    </ul>
+                    <h2>OPENING HOURS:</h2>
+                    <ul>
+                        <li>TUESDAY-THURSDAY (17:00-22:00)</li>
+                        <li>FRIDAY-SUNDAY (16:30-23:00)</li>
+                        <li>MONDAY - closed</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>FIND US HERE:</h2>
 
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="350" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=lygten%2016&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/">pureblack.de</a></div>
+                        <style>
+                            .mapouter {
+                                text-align: right;
+                                height: 250px;
+                                width: 350px;
+                            }
+
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 250px;
+                                width: 350px;
+                            }
+                        </style>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
