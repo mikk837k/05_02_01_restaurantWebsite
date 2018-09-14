@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", hentJson);
 let retter;
 let dest = document.querySelector(".data_courses");
 let kategoriFilter = "alle";
+let modal = document.querySelector("#modal");
 
 
 async function hentJson() {
@@ -38,6 +39,24 @@ function filtrering() {
     visRetter();
 }
 
+//MODEL VISNING START
+
+function visModal(retterne) {
+    modal.classList.add("show");
+    modal.querySelector(".modal-navn").textContent = retterne.navn;
+    modal.querySelector(".modal-billede").src = "img/lrg/" + retterne.billede + ".jpg";
+    modal.querySelector(".modal-billede").alt = "Foto af " + retterne.navn;
+    modal.querySelector(".data_description_long").textContent = retterne.langbeskrivelse;
+    modal.querySelector("button").addEventListener("click", hideModal);
+}
+
+function hideModal() {
+    modal.classList.remove("show");
+}
+
+//MODAL VISNING SLUT
+
+
 //Filtrering Slut
 
 function visRetter() {
@@ -48,9 +67,11 @@ function visRetter() {
         if (ret.kategori == kategoriFilter || kategoriFilter == "alle") {
             let klon = temp.cloneNode(true).content;
             klon.querySelector("img").src = "img/sm/" + ret.billede + ".jpg";
+            klon.querySelector("img").addEventListener("click", () => {
+                visModal(ret);
+            });
             klon.querySelector("h2").textContent = ret.navn;
             klon.querySelector(".data_desription_short").textContent = ret.kortbeskrivelse;
-            klon.querySelector(".data_description_long").textContent = ret.langbeskrivelse;
             klon.querySelector(".data_price").textContent = "Pris: " + ret.pris + "kr.";
             dest.appendChild(klon);
         }

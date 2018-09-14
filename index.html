@@ -10,6 +10,15 @@
 </head>
 
 <body>
+    <div id="modal">
+        <button>Close</button>
+        <div id="modal-content">
+            <h2 class="modal-navn"></h2>
+            <p class="data_description_long"></p>
+            <p class="data_place_of_origin"></p>
+            <img class="modal-billede" src="" alt="">
+        </div>
+    </div>
     <header class="frontpage">
         <img class="logo" src="img/logo/lillelogo.png" alt="italiensk pizzaria logo angelo">
         <div>
@@ -22,10 +31,11 @@
         <section id="menuPage">
             <h1>MENU</h1>
             <div class="filtrering">
-                <button class="course1">FORETTER</button>
-                <button class="course2">HOVEDRETTER</button>
-                <button class="course3">DESSERTER</button>
-                <button class="course4">SIDES</button>
+                <button class="menu-item course1" data-kategori="alle">ALLE</button>
+                <button class="menu-item course2" data-kategori="forret">FORETTER</button>
+                <button class="menu-item course3" data-kategori="hovedret">HOVEDRETTER</button>
+                <button class="menu-item course4" data-kategori="dessert">DESSERTER</button>
+                <button class="menu-item course5" data-kategori="sideorder">SIDES</button>
             </div>
             <div class="data_courses">
             </div>
@@ -34,7 +44,6 @@
                     <img src="" alt="">
                     <h2></h2>
                     <p class="data_desription_short"></p>
-                    <p class="data_description_long"></p>
                     <p class="data_price"></p>
                 </div>
             </template>
@@ -90,6 +99,7 @@
                                 height: 250px;
                                 width: 350px;
                             }
+
                         </style>
                     </div>
                 </div>

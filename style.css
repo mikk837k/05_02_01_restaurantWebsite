@@ -2,6 +2,7 @@
 :root {
     --colorOne: #0b0d0e;
     --colorTwo: rgb(39, 2, 3);
+    --colorThree: rgb(57, 57, 57);
     --fontColor: white;
     font-size: 62.5%;
     --fontOne: 'Amatic SC', cursive;
@@ -47,7 +48,7 @@ li {
 footer {
     width: 100vw;
     height: 100px;
-    background-color: var(--colorTwo);
+    background-color: var(--colorThree);
 }
 
 /*gennerelle settings slut*/
@@ -75,7 +76,6 @@ section h1 {
 }
 
 /*forsiden*/
-
 
 .logo {
     min-width: 150px;
@@ -105,29 +105,56 @@ button {
     font-weight: bold;
 }
 
-.filtrering {
-    display: grid;
-    grid-template-columns: 1fr auto auto auto auto 1fr;
-}
-
-.filtrering button {
-    place-self: center;
-    width: 100px;
-    height: 30px;
-    font-size: 2em;
-    background-color: transparent;
-    border-color: transparent;
-    margin-bottom: 70px;
-    font-weight: 100;
-    color: white;
-}
-
 /* Button Settings Slut*/
+
+
 
 .data_courses {
     display: grid;
     grid-gap: 50px;
 }
+
+/* menuPage start*/
+
+#menuPage {
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+/************ MODEL VISNING **********/
+
+#modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 1s;
+    pointer-events: none;
+
+}
+
+#modal-content {
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+}
+
+#modal.show {
+    opacity: 1;
+    transition: 0.5s;
+    pointer-events: all;
+}
+
+#modal img {
+    height: 60vh;
+    object-fit: scale-down;
+}
+
+/******** MODAL SLUT **********/
+
+/* menuPage slut*/
 
 /* AboutUs page Start*/
 
@@ -182,6 +209,26 @@ button {
     }
 
     /*    Filtreringsknapper start*/
+
+    .filtrering {
+        display: grid;
+        grid-template-columns: 1fr auto auto auto auto auto 1fr;
+        grid-gap: 5px;
+    }
+
+    .filtrering button {
+        place-self: center;
+        margin: 0;
+        width: 100px;
+        height: 30px;
+        font-size: 2em;
+        background-color: transparent;
+        border-color: transparent;
+        margin-bottom: 70px;
+        font-weight: 100;
+        color: white;
+    }
+
     .course1 {
         grid-column: 2;
     }
@@ -198,8 +245,14 @@ button {
         grid-column: 5;
     }
 
+    .course5 {
+        grid-column: 6;
+    }
+
     /*   Filtreringsknapper slut */
 }
+
+
 
 
 @media screen and (min-width:1200px) {

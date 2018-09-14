@@ -22,7 +22,7 @@
         "kategori": "forret",
         "pris": 39,
         "kortbeskrivelse": "Brushetta i forskellige variationer",
-        "langbeskrivelse": "Prøv den klasskiske forret i forskellige variationer. Alle er med autentiske italienske råvarer og vil helt sikker introducere nye farvoritter af den klassiske forret.",
+        "langbeskrivelse": "Prøv den klasskiske forret i forskellige variationer. Alle er med autentiske italienske råvarer og vil helt sikker introducere nye farvoritter.",
         "billede": "Forret1"
 	},
     {
@@ -120,7 +120,7 @@
         "navn": "Creme brulee al tartufo",
         "kategori": "dessert",
         "pris": 49,
-        "kortbeskrivelse": "Creme brulee med trøffel revet",
+        "kortbeskrivelse": "Creme brulee med revet trøffel",
         "langbeskrivelse": "Creme brulee med et tvist i form af revet trøffel.",
         "billede": "Dessert3"
 	},
