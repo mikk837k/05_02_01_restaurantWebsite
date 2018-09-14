@@ -6,7 +6,7 @@ let kategoriFilter = "alle";
 
 
 async function hentJson() {
-    let myJsonData = await fetch("csvjson.json");
+    let myJsonData = await fetch("myjson.json");
     retter = await myJsonData.json();
 
     visRetter();

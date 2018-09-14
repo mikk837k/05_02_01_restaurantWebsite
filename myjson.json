@@ -1,58 +1,57 @@
-[
-    {
+[{
         "id": 1,
         "navn": "Bruschetta ai funghi",
         "kategori": "forret",
         "pris": 29,
         "kortbeskrivelse": "Brushetta med champignon",
-        "langbeskrivelse": "En klassisk italiensk forret, bestående af friskbagt flute med friske smør stegte champingoner.",
+        "langbeskrivelse": "En klassisk italiensk forret, bestÃ¥ende af friskbagt flute med friske smÃ¸r stegte champingoner.",
         "billede": "Forret3"
-  },
+	},
     {
         "id": 2,
         "navn": "Bruschetta con pomodoro",
         "kategori": "forret",
         "pris": 29,
         "kortbeskrivelse": "Brushetta med tomat",
-        "langbeskrivelse": "En klassisk italiensk forret, bestående af friskbagt flute med friske tomater, mozzeralla og olivenolie.",
+        "langbeskrivelse": "En klassisk italiensk forret, bestÃ¥ende af friskbagt flute med friske tomater, mozzeralla og olivenolie.",
         "billede": "Forret2"
-  },
+	},
     {
         "id": 3,
         "navn": "Bruschetta diversa",
         "kategori": "forret",
         "pris": 39,
         "kortbeskrivelse": "Brushetta i forskellige variationer",
-        "langbeskrivelse": "Prøv den klasskiske forret i forskellige variationer. Alle er med autentiske italienske råvarer og vil helt sikker introducere nye farvoritter af den klassiske forret.",
+        "langbeskrivelse": "PrÃ¸v den klasskiske forret i forskellige variationer. Alle er med autentiske italienske rÃ¥varer og vil helt sikker introducere nye farvoritter af den klassiske forret.",
         "billede": "Forret1"
-  },
+	},
     {
         "id": 4,
         "navn": "Pizza con prosciutto",
         "kategori": "hovedret",
         "pris": 79,
         "kortbeskrivelse": "Pizza med skinke",
-        "langbeskrivelse": "Klassisk italiensk pizza med tynd og sprød bund, tomatsovs, mozzarella og skinke.",
+        "langbeskrivelse": "Klassisk italiensk pizza med tynd og sprÃ¸d bund, tomatsovs, mozzarella og skinke.",
         "billede": "Hovedret2"
-  },
+	},
     {
         "id": 5,
         "navn": "Pizza con prosciutto e funghi",
         "kategori": "hovedret",
         "pris": 89,
         "kortbeskrivelse": "Pizza med skinke og champignon",
-        "langbeskrivelse": "Klassisk italiensk pizza med tynd og sprød bund, tomatsovs, mozzarella, skinke og champignon.",
+        "langbeskrivelse": "Klassisk italiensk pizza med tynd og sprÃ¸d bund, tomatsovs, mozzarella, skinke og champignon.",
         "billede": "Hovedret1"
-  },
+	},
     {
         "id": 6,
         "navn": "Pizza con pollo e parmigiano",
         "kategori": "hovedret",
         "pris": 89,
         "kortbeskrivelse": "Pizza med kylling og parmasan",
-        "langbeskrivelse": "Klassisk italiensk pizza med tynd og sprød bund, tomatsovs, mozzarella, kyling, ruccola og revet parmasan.",
+        "langbeskrivelse": "Klassisk italiensk pizza med tynd og sprÃ¸d bund, tomatsovs, mozzarella, kyling, ruccola og revet parmasan.",
         "billede": "Hovedret3"
-  },
+	},
     {
         "id": 7,
         "navn": "Pasta con funghi e pancetta",
@@ -61,16 +60,16 @@
         "kortbeskrivelse": "Pasta med champignon og pancetta (italiensk bacon)",
         "langbeskrivelse": "Frisklavet pasta med champignon og klassisk italiensk pancetta.",
         "billede": "Hovedret5"
-  },
+	},
     {
         "id": 8,
         "navn": "Pasta con pomodoro e polpette",
         "kategori": "hovedret",
         "pris": 79,
-        "kortbeskrivelse": "Paste med tomatsovs og kødboller",
-        "langbeskrivelse": "Frisklavet pasta med tomatsovs og kødboller.",
+        "kortbeskrivelse": "Paste med tomatsovs og kÃ¸dboller",
+        "langbeskrivelse": "Frisklavet pasta med tomatsovs og kÃ¸dboller.",
         "billede": "Hovedret4"
-  },
+	},
     {
         "id": 9,
         "navn": "Pasta con salsa di pomodoro e parmigiano",
@@ -79,7 +78,7 @@
         "kortbeskrivelse": "Pasta med tomatsovs og parmesan",
         "langbeskrivelse": "Frisklavet pasta med tomatsovs og revet parmasan.",
         "billede": "Hovedret6"
-  },
+	},
     {
         "id": 10,
         "navn": "Lasagne",
@@ -88,50 +87,50 @@
         "kortbeskrivelse": "Lasagne",
         "langbeskrivelse": "Klassisk italiensk lasagne med frisklavet lasagneplader.",
         "billede": "Hovedret7"
-  },
+	},
     {
         "id": 11,
         "navn": "Gelato con fragole",
         "kategori": "dessert",
         "pris": 49,
-        "kortbeskrivelse": "Italiensk is med jordbær",
-        "langbeskrivelse": "Klassisk italiensk hjemmelavet Gelato (is) med jordbærsmag.",
+        "kortbeskrivelse": "Italiensk is med jordbÃ¦r",
+        "langbeskrivelse": "Klassisk italiensk hjemmelavet Gelato (is) med jordbÃ¦rsmag.",
         "billede": "Dessert1"
-  },
+	},
     {
         "id": 12,
         "navn": "Gelato con mirtilli",
         "kategori": "dessert",
         "pris": 49,
-        "kortbeskrivelse": "Italiensk is med blåbær",
-        "langbeskrivelse": "Klassisk italiensk hjemmelavet Gelato (is) med blåbærsmag.",
+        "kortbeskrivelse": "Italiensk is med blÃ¥bÃ¦r",
+        "langbeskrivelse": "Klassisk italiensk hjemmelavet Gelato (is) med blÃ¥bÃ¦rsmag.",
         "billede": "Dessert2"
-  },
+	},
     {
         "id": 13,
-        "navn": "Tiramisù",
+        "navn": "TiramisÃ¹",
         "kategori": "dessert",
         "pris": 49,
         "kortbeskrivelse": "Klassisk italiensk Tiramisu",
-        "langbeskrivelse": "Italiensk Tiramisú",
+        "langbeskrivelse": "Italiensk TiramisÃº",
         "billede": "Dessert4"
-  },
+	},
     {
         "id": 14,
         "navn": "Creme brulee al tartufo",
         "kategori": "dessert",
         "pris": 49,
-        "kortbeskrivelse": "Creme brulee med trøffel revet",
-        "langbeskrivelse": "Creme brulee med et tvist i form af revet trøffel.",
+        "kortbeskrivelse": "Creme brulee med trÃ¸ffel revet",
+        "langbeskrivelse": "Creme brulee med et tvist i form af revet trÃ¸ffel.",
         "billede": "Dessert3"
-  },
+	},
     {
         "id": 15,
         "navn": "Pane con sale mediterraneo",
         "kategori": "sideorder",
         "pris": 19,
-        "kortbeskrivelse": "Friskbagt rosmarinbrød med middelhavssalt",
-        "langbeskrivelse": "Friskbagt rosmarinbrød med middelhavsalt og hjemmelavet smør.",
+        "kortbeskrivelse": "Friskbagt rosmarinbrÃ¸d med middelhavssalt",
+        "langbeskrivelse": "Friskbagt rosmarinbrÃ¸d med middelhavsalt og hjemmelavet smÃ¸r.",
         "billede": "Sideorder"
-  }
+	}
 ]
