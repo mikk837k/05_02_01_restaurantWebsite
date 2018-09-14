@@ -12,6 +12,19 @@ async function hentJson() {
     visRetter();
 }
 
+//menu navigation på siden
+
+document.querySelector(".box1").addEventListener("click", function () {
+    window.location.href = "#menuPage";
+})
+document.querySelector(".box2").addEventListener("click", function () {
+    window.location.href = "#bookingPage";
+})
+document.querySelector(".box3").addEventListener("click", function () {
+    window.location.href = "#aboutusPage";
+})
+
+
 //Nedestående del omhandler kun filtrering som endnu ikke er defineret
 
 document.querySelectorAll(".menu-item").forEach(knap => {

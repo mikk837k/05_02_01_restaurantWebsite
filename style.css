@@ -1,6 +1,7 @@
 /* Generelle settings */
 :root {
     --colorOne: #0b0d0e;
+    --colorTwo: rgb(39, 2, 3);
     --fontColor: white;
     font-size: 62.5%;
     --fontOne: 'Amatic SC', cursive;
@@ -41,6 +42,12 @@ li {
     font-size: 2em;
     font-family: var(--fontTwo);
     list-style-type: none;
+}
+
+footer {
+    width: 100vw;
+    height: 100px;
+    background-color: var(--colorTwo);
 }
 
 /*gennerelle settings slut*/
@@ -86,6 +93,8 @@ section h1 {
     justify-content: center;
 }
 
+/* Button Settings */
+
 button {
     width: 250px;
     height: 60px;
@@ -96,9 +105,28 @@ button {
     font-weight: bold;
 }
 
+.filtrering {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto 1fr;
+}
+
+.filtrering button {
+    place-self: center;
+    width: 100px;
+    height: 30px;
+    font-size: 2em;
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 70px;
+    font-weight: 100;
+    color: white;
+}
+
+/* Button Settings Slut*/
+
 .data_courses {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 50px;
 }
 
 /* AboutUs page Start*/
@@ -116,30 +144,67 @@ button {
 }
 
 
+
 /*AboutUs page slut*/
 
 @media screen and (min-width:480px) {
 
     .data_courses {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
 
 @media screen and (min-width:720px) {
+
+    .data_courses {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     #aboutusPage article {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 360px 360px 1fr;
+        grid-template-rows: 250px 1fr;
     }
 
     .txt {
-        grid-column: span 2;
+        grid-column: 2 / span 2;
+        grid-row: 1;
     }
+
+    .address {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .map {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    /*    Filtreringsknapper start*/
+    .course1 {
+        grid-column: 2;
+    }
+
+    .course2 {
+        grid-column: 3;
+    }
+
+    .course3 {
+        grid-column: 4;
+    }
+
+    .course4 {
+        grid-column: 5;
+    }
+
+    /*   Filtreringsknapper slut */
 }
 
 
 @media screen and (min-width:1200px) {
 
     .data_courses {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
