@@ -9,10 +9,13 @@
 
 body {
     margin: 0 auto;
+    background-color: var(--colorOne);
 }
+
 
 main {
     background-color: var(--colorOne);
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -24,16 +27,20 @@ h1 {
 h2 {
     font-size: 2em;
     color: var(--fontColor);
+    font-family: var(--fontTwo);
 }
 
 p {
     font-size: 2em;
     color: var(--fontColor);
+    font-family: var(--fontTwo);
 }
 
 li {
     color: var(--fontColor);
     font-size: 2em;
+    font-family: var(--fontTwo);
+    list-style-type: none;
 }
 
 /*gennerelle settings slut*/
@@ -42,6 +49,9 @@ li {
     width: 100vw;
     height: 100vh;
     background-image: url(img/Untitled-1background.jpg);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr 50px 50px 50px 1fr;
 }
 
 section {
@@ -58,12 +68,7 @@ section h1 {
 }
 
 /*forsiden*/
-.frontpage {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1fr 50px 50px 50px 1fr;
-    grid-gap: 15px;
-}
+
 
 .logo {
     min-width: 150px;
@@ -96,12 +101,39 @@ button {
     grid-gap: 20px;
 }
 
+/* AboutUs page Start*/
+
+#aboutusPage article {
+    display: grid;
+}
+
+.map {
+    place-self: center;
+}
+
+.address {
+    place-self: center;
+}
+
+
+/*AboutUs page slut*/
+
 @media screen and (min-width:480px) {
 
     .data_courses {
         grid-template-columns: repeat(3, 1fr);
     }
 
+}
+
+@media screen and (min-width:720px) {
+    #aboutusPage article {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .txt {
+        grid-column: span 2;
+    }
 }
 
 

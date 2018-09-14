@@ -38,7 +38,7 @@ function visRetter() {
             klon.querySelector("h2").textContent = ret.navn;
             klon.querySelector(".data_desription_short").textContent = ret.kortbeskrivelse;
             klon.querySelector(".data_description_long").textContent = ret.langbeskrivelse;
-            klon.querySelector(".data_price").textContent = "Pris: " + ret.pris;
+            klon.querySelector(".data_price").textContent = "Pris: " + ret.pris + "kr.";
             dest.appendChild(klon);
         }
     })
