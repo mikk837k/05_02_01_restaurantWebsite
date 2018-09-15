@@ -141,7 +141,7 @@ button {
     margin: auto;
 }
 
-#modal.show {
+w #modal.show {
     opacity: 1;
     transition: 0.5s;
     pointer-events: all;
@@ -155,6 +155,26 @@ button {
 /******** MODAL SLUT **********/
 
 /* menuPage slut*/
+
+
+/* bookingPage Start*/
+
+#bookingPage article div {
+    display: grid;
+    grid-template-rows: 1fr 70px 70px 70px 1fr;
+}
+
+.datetime {
+    grid-row: 2;
+}
+
+.tel {
+    grid-row: 3;
+}
+
+.submit {
+    grid-row: 4;
+}
 
 /* AboutUs page Start*/
 
