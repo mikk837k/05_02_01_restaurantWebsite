@@ -20,6 +20,10 @@ main {
     margin-bottom: 50px;
 }
 
+label {
+    display: none;
+}
+
 h1 {
     font-size: 4em;
     color: var(--fontColor);
