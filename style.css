@@ -9,11 +9,11 @@
     --fontTwo: 'Economica', sans-serif;
 }
 
+
 body {
     margin: 0 auto;
     background-color: var(--colorOne);
 }
-
 
 main {
     background-color: var(--colorOne);
@@ -159,21 +159,36 @@ w #modal.show {
 
 /* bookingPage Start*/
 
-#bookingPage article div {
+#bookingPage article .bookingForm {
     display: grid;
-    grid-template-rows: 1fr 70px 70px 70px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 70px 70px 70px 70px 1fr;
+    grid-gap: 30px;
 }
 
+
 .datetime {
+    grid-column: 1;
     grid-row: 2;
 }
 
+.guest {
+    grid-column: 1;
+    grid-row: 3
+}
+
 .tel {
-    grid-row: 3;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.tel h2 {
+    padding-bottom: 12px;
 }
 
 .submit {
-    grid-row: 4;
+    grid-column: 1;
+    grid-row: 5;
 }
 
 /* AboutUs page Start*/
@@ -206,6 +221,38 @@ w #modal.show {
 
     .data_courses {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    #bookingPage article .bookingForm {
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr;
+        grid-template-rows: 1fr 70px 70px 70px 1fr;
+        grid-gap: 30px;
+    }
+
+
+    .datetime {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .guest {
+        grid-column: 2;
+        grid-row: 3
+    }
+
+    .guest h2 {
+        padding-bottom: 12px;
+    }
+
+    .tel {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .submit {
+        grid-column: 2;
+        grid-row: 5;
     }
 
     #aboutusPage article {
@@ -279,5 +326,34 @@ w #modal.show {
 
     .data_courses {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    #bookingPage article .bookingForm {
+        display: grid;
+        grid-template-columns: 1fr 100px 100px 100px 1fr;
+        grid-template-rows: 1fr 70px 70px 1fr;
+        grid-column-gap: 100px;
+    }
+
+
+    .datetime {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .guest {
+        grid-column: 3;
+        grid-row: 2
+    }
+
+    .tel {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    .submit {
+        grid-column: 2 / span 3;
+        grid-row: 3;
+        place-self: center;
     }
 }
