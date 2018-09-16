@@ -141,7 +141,7 @@ button {
     margin: auto;
 }
 
-w #modal.show {
+#modal.show {
     opacity: 1;
     transition: 0.5s;
     pointer-events: all;
