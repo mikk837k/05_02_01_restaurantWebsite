@@ -6,7 +6,7 @@
     --fontColor: white;
     font-size: 62.5%;
     --fontOne: 'Amatic SC', cursive;
-    --fontTwo: 'Economica', sans-serif;
+    --fontTwo: 'Open Sans Condensed', sans-serif;
 }
 
 
@@ -20,18 +20,14 @@ main {
     margin-bottom: 50px;
 }
 
-label {
-    display: none;
-}
-
 h1 {
-    font-size: 4em;
+    font-size: 6em;
     color: var(--fontColor);
     font-family: var(--fontOne);
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     color: var(--fontColor);
     font-family: var(--fontTwo);
 }
@@ -57,18 +53,20 @@ footer {
 
 /*gennerelle settings slut*/
 
-.frontpage {
+#frontpage {
     width: 100vw;
     height: 100vh;
     background-image: url(img/Untitled-1background.jpg);
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1fr 50px 50px 50px 1fr;
+    grid-template-rows: 40% auto 1fr;
 }
 
 section {
     background-color: var(--colorOne);
     margin: 0 5%;
+    margin-top: 50px;
+    padding-top: 20px;
 }
 
 section img {
@@ -81,17 +79,10 @@ section h1 {
 
 /*forsiden*/
 
-.logo {
-    min-width: 150px;
-    grid-column: 2;
-    grid-row: 1;
-    place-self: center;
-}
-
-.frontpage div {
+#frontpage div {
     min-width: 250px;
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 2;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -99,7 +90,25 @@ section h1 {
 
 /* Button Settings */
 
-button {
+#frontpage button {
+    width: 200px;
+    margin: 10px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#frontpage button img {
+    width: 100%;
+}
+
+.logo {
+    max-width: 200px;
+    grid-column: 2;
+    grid-row: 1;
+    place-self: center;
+}
+
+.menuPage button {
     width: 250px;
     height: 60px;
     margin: 10px;
@@ -118,12 +127,20 @@ button {
     grid-gap: 50px;
 }
 
-/* menuPage start*/
+/* BackToTop button*/
 
-#menuPage {
-    margin-top: 50px;
-    padding-top: 20px;
+.backToTop {
+    width: 150px;
+    position: fixed;
+    right: 100px;
+    bottom: 10px;
 }
+
+.backToTop img {
+    width: 130%;
+}
+
+/* menuPage start*/
 
 /************ MODEL VISNING **********/
 
@@ -131,18 +148,25 @@ button {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     opacity: 0;
     transition: 1s;
     pointer-events: none;
-
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
 }
 
 #modal-content {
-    width: 70vw;
+    grid-column: 2;
+    grid-row: 2;
+    max-width: 490px;
     height: 70vh;
-    margin: auto;
+    cursor: pointer;
+}
+
+#modal-content h2 {
+    justify-self: center;
 }
 
 #modal.show {
@@ -167,8 +191,7 @@ button {
 #bookingPage article .bookingForm {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 70px 70px 70px 70px 1fr;
-    grid-gap: 30px;
+    grid-template-rows: 1fr 70% 70% 70% 70% 1fr;
 }
 
 
@@ -194,6 +217,30 @@ button {
 .submit {
     grid-column: 1;
     grid-row: 5;
+}
+
+input {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    font-family: var(--fontTwo);
+    font-size: 2em;
+}
+
+.datetime input {
+    cursor: pointer;
+    width: 180px;
+    height: 30px;
+    font-family: var(--fontTwo);
+    font-size: 2em;
+}
+
+.submit form {
+    margin-top: 10%
+}
+
+label {
+    color: transparent;
 }
 
 /* AboutUs page Start*/
@@ -231,7 +278,7 @@ button {
     #bookingPage article .bookingForm {
         display: grid;
         grid-template-columns: 1fr 100px 1fr;
-        grid-template-rows: 1fr 70px 70px 70px 1fr;
+        grid-template-rows: 1fr 70% 70% 70% 1fr;
         grid-gap: 30px;
     }
 
@@ -335,9 +382,10 @@ button {
 
     #bookingPage article .bookingForm {
         display: grid;
-        grid-template-columns: 1fr 100px 100px 100px 1fr;
+        grid-template-columns: 1fr 120px 120px 120px 1fr;
         grid-template-rows: 1fr 70px 70px 1fr;
         grid-column-gap: 100px;
+        grid-row-gap: 80px;
     }
 
 

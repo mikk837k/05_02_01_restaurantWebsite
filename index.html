@@ -5,13 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurent Angelo</title>
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Economica" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="modal">
-        <button>Close</button>
         <div id="modal-content">
             <h2 class="modal-navn"></h2>
             <p class="data_description_long"></p>
@@ -19,15 +18,16 @@
             <img class="modal-billede" src="" alt="">
         </div>
     </div>
-    <header class="frontpage">
-        <img class="logo" src="img/logo/lillelogo.png" alt="italiensk pizzaria logo angelo">
+    <header id="frontpage">
+        <img class="logo" src="img/logo/lillelogo.svg" alt="italiensk pizzaria logo angelo">
         <div>
-            <button class="box1">MENU</button>
-            <button class="box2">BOOKING</button>
-            <button class="box3">OM</button>
+            <button class="box1"><img src="img/logo/SVG/menu_knap2.svg" alt="menu knap"></button>
+            <button class="box2"><img src="img/logo/SVG/menu_knap3.svg" alt="menu knap"></button>
+            <button class="box3"><img src="img/logo/SVG/menu_knap1.svg" alt="menu knap"></button>
         </div>
     </header>
     <main>
+       <div class="backToTop"><img src="img/logo/topArrow.svg" alt="back to top navigation"></div>
         <section id="menuPage">
             <h1>MENU</h1>
             <div class="filtrering">
@@ -55,22 +55,22 @@
                     <div class="datetime">
                         <h2>Vælg en dato:</h2>
                         <form>>
-                            <label for="datetime">booking dato</label>
                             <input type="datetime-local" name="bdaytime" id="datetime">
+                            <label for="datetime">booking dato</label>
                         </form>
                     </div>
                     <div class="guest">
                         <h2>Antal gæster:</h2>
                         <form>
-                            <label for="amount">Antal gæster</label>
                             <input type=number name="quantity" min="1" max="8" id="amount">
+                            <label for="amount">Antal gæster</label>
                         </form>
                     </div>
                     <div class="tel">
                         <h2>Telefon nr.:</h2>
                         <form>
-                            <label for="phonenum">Telefon nr.</label>
                             <input type=tel name="dktel" id="phonenum">
+                            <label for="phonenum">Telefon nr.</label>
                         </form>
                     </div>
                     <div class="submit">
@@ -125,7 +125,6 @@
                                 height: 250px;
                                 width: 350px;
                             }
-
                         </style>
                     </div>
                 </div>

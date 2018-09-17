@@ -16,13 +16,17 @@ async function hentJson() {
 //menu navigation på siden
 
 document.querySelector(".box1").addEventListener("click", function () {
-    window.location.href = "#menuPage";
+    window.location.href = "#aboutusPage";
 })
 document.querySelector(".box2").addEventListener("click", function () {
-    window.location.href = "#bookingPage";
+    window.location.href = "#menuPage";
 })
 document.querySelector(".box3").addEventListener("click", function () {
-    window.location.href = "#aboutusPage";
+    window.location.href = "#bookingPage";
+})
+
+document.querySelector(".backToTop").addEventListener("click", function () {
+    window.location.href = "#frontpage";
 })
 
 
@@ -47,7 +51,7 @@ function visModal(retterne) {
     modal.querySelector(".modal-billede").src = "img/lrg/" + retterne.billede + ".jpg";
     modal.querySelector(".modal-billede").alt = "Foto af " + retterne.navn;
     modal.querySelector(".data_description_long").textContent = retterne.langbeskrivelse;
-    modal.querySelector("button").addEventListener("click", hideModal);
+    modal.querySelector("div").addEventListener("click", hideModal);
 }
 
 function hideModal() {
