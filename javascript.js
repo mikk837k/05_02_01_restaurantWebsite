@@ -1,9 +1,16 @@
-document.addEventListener("DOMContentLoaded", hentJson);
-
 let retter;
 let dest = document.querySelector(".data_courses");
 let kategoriFilter = "alle";
 let modal = document.querySelector("#modal");
+let pos = document.querySelector(".backToTop");
+
+document.addEventListener("DOMContentLoaded", start);
+
+function start() {
+    hentJson();
+    backToTop();
+    switchLogo();
+}
 
 
 async function hentJson() {
@@ -63,9 +70,32 @@ function hideModal() {
 
 //Filtrering Slut
 
+
+//BackToTop - funktion som fjerner klassen "hide" når brugeren har scrollet over 560.
+document.addEventListener("scroll", backToTop);
+
+function backToTop() {
+    if (document.documentElement.scrollTop < 560) {
+        pos.classList.add("hide");
+    } else {
+        pos.classList.remove("hide");
+    }
+}
+
+function switchLogo() {
+    let myLogo = document.querySelector("#frontpage");
+
+    if (window.innerWidth <= 480) {
+        myLogo.querySelector("img").src = "img/logo/lillelogo.svg";
+    } else {
+        myLogo.querySelector("img").src = "img/logo/stortlogo.svg";
+    }
+}
+
 function visRetter() {
     let temp = document.querySelector(".data_template");
 
+    document.querySelector("#menuPage h2").textContent = kategoriFilter;
     //løb menu igennem og lav en klon
     retter.forEach(ret => {
         if (ret.kategori == kategoriFilter || kategoriFilter == "alle") {
@@ -74,7 +104,7 @@ function visRetter() {
             klon.querySelector("img").addEventListener("click", () => {
                 visModal(ret);
             });
-            klon.querySelector("h2").textContent = ret.navn;
+            klon.querySelector("h3").textContent = ret.navn;
             klon.querySelector(".data_desription_short").textContent = ret.kortbeskrivelse;
             klon.querySelector(".data_price").textContent = "Pris: " + ret.pris + "kr.";
             dest.appendChild(klon);

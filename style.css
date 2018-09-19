@@ -1,8 +1,9 @@
 /* Generelle settings */
 :root {
     --colorOne: #0b0d0e;
+    --colorOneOpas: rgba(11, 13, 14, 0.35);
     --colorTwo: rgb(39, 2, 3);
-    --colorThree: rgb(57, 57, 57);
+    --colorThree: black;
     --fontColor: white;
     font-size: 62.5%;
     --fontOne: 'Amatic SC', cursive;
@@ -27,6 +28,12 @@ h1 {
 }
 
 h2 {
+    font-size: 3em;
+    color: var(--fontColor);
+    font-family: var(--fontTwo);
+}
+
+h3 {
     font-size: 2.5em;
     color: var(--fontColor);
     font-family: var(--fontTwo);
@@ -108,15 +115,6 @@ section h1 {
     place-self: center;
 }
 
-.menuPage button {
-    width: 250px;
-    height: 60px;
-    margin: 10px;
-    border-radius: 50px;
-    font-size: 3em;
-    font-family: var(--fontOne);
-    font-weight: bold;
-}
 
 /* Button Settings Slut*/
 
@@ -136,47 +134,30 @@ section h1 {
 
 /* menuPage start*/
 
+span {
+    color: white;
+    font-size: 2.5em;
+}
+
+#menuPage h2 {
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
 .filtrering {
-    display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .filtrering button {
-    width: auto;
     height: 30px;
     font-size: 2em;
     background-color: transparent;
     border-color: transparent;
     font-weight: 100;
     color: white;
-}
-
-.course1 {
-    grid-column: 1 / span 2;
-    margin-bottom: 15px;
-}
-
-.course2 {
-    grid-column: 3;
-    margin-bottom: 15px;
-}
-
-.course3 {
-    grid-column: 4;
-    margin-bottom: 15px;
-}
-
-.course4 {
-    grid-column: 1 / span 3;
-    grid-row: 2;
-    justify-self: center;
-}
-
-.course5 {
-    grid-column: 3/ span 2;
-    grid-row: 2;
-    justify-self: center;
 }
 
 
@@ -186,7 +167,7 @@ section h1 {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 1);
     opacity: 0;
     transition: 1s;
     pointer-events: none;
@@ -254,6 +235,7 @@ section h1 {
 }
 
 .submit {
+    width: 100px;
     grid-column: 1;
     grid-row: 5;
 }
@@ -306,6 +288,13 @@ label {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .logo {
+        max-width: 400px;
+        grid-column: 2;
+        grid-row: 1;
+        place-self: center;
+    }
+
 }
 
 @media screen and (min-width:768px) {
@@ -320,7 +309,6 @@ label {
         grid-template-rows: 70% 70% 70% 1fr;
         grid-gap: 30px;
     }
-
 
     .datetime {
         grid-column: 1;
@@ -366,48 +354,7 @@ label {
         grid-row: 2;
     }
 
-    /*    Filtreringsknapper start*/
-
-    .filtrering {
-        display: grid;
-        grid-template-columns: 1fr auto auto auto auto auto 1fr;
-        grid-gap: 5px;
-    }
-
-    .filtrering button {
-        place-self: center;
-        margin: 0;
-        width: 100px;
-        height: 30px;
-        font-size: 2em;
-        background-color: transparent;
-        border-color: transparent;
-        margin-bottom: 70px;
-        font-weight: 100;
-        color: white;
-    }
-
-    .course1 {
-        grid-column: 2;
-    }
-
-    .course2 {
-        grid-column: 3;
-    }
-
-    .course3 {
-        grid-column: 4;
-    }
-
-    .course4 {
-        grid-column: 5;
-    }
-
-    .course5 {
-        grid-column: 6;
-    }
-
-    /*   Filtreringsknapper slut */
+    /*    backToTop start - knap som sender brugeren tilbage til toppen af siden*/
 
     .backToTop {
         display: block;
@@ -419,6 +366,30 @@ label {
 
     .backToTop img {
         width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    /*    backToTop slut */
+
+    #frontpage img {
+        z-index: 2;
+    }
+
+    #frontpage button {
+        z-index: 2;
+    }
+
+    .background {
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--colorOneOpas);
+        z-index: 1;
     }
 }
 
@@ -433,7 +404,7 @@ label {
 
     #bookingPage article .bookingForm {
         display: grid;
-        grid-template-columns: 1fr 120px 120px 120px 1fr;
+        grid-template-columns: 1fr 200px 200px 200px 1fr;
         grid-template-rows: 1fr 70px 70px 1fr;
         grid-column-gap: 100px;
         grid-row-gap: 80px;
@@ -443,6 +414,10 @@ label {
     .datetime {
         grid-column: 2;
         grid-row: 2;
+    }
+
+    .datetime h2 {
+         padding-bottom: 12px;
     }
 
     .guest {
@@ -461,7 +436,15 @@ label {
         place-self: center;
     }
 
-    .backToTop img {
-        width: 130%;
+    #frontpage {
+    grid-row-gap: 50px;
+    }
+
+    .logo {
+        margin-top:50px;
+        max-width: 500px;
+        grid-column: 2;
+        grid-row: 1;
+        place-self: center;
     }
 }
