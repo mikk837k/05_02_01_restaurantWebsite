@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", start);
 function start() {
     hentJson();
     backToTop();
-    switchLogo();
+    //switchLogo();
 }
 
 
@@ -82,7 +82,7 @@ function backToTop() {
     }
 }
 
-function switchLogo() {
+/*function switchLogo() {
     let myLogo = document.querySelector("#frontpage");
 
     if (window.innerWidth <= 480) {
@@ -90,7 +90,7 @@ function switchLogo() {
     } else {
         myLogo.querySelector("img").src = "img/logo/stortlogo.svg";
     }
-}
+}*/
 
 function visRetter() {
     let temp = document.querySelector(".data_template");
