@@ -60,26 +60,9 @@ footer {
 
 /*gennerelle settings slut*/
 
-#frontpage {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 40% auto 1fr;
-}
+
 
 /**/
-
-picture {
-    width: 100%;
-    object-fit: contain;
-}
-
-.background {
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 3;
-
-}
 
 section {
     background-color: var(--colorOne);
@@ -98,7 +81,15 @@ section h1 {
 
 /*forsiden*/
 
-#frontpage div {
+#frontpage {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 40% auto 1fr;
+}
+
+#frontpage .buttons {
     min-width: 250px;
     grid-column: 2;
     grid-row: 2;
@@ -120,12 +111,26 @@ section h1 {
     width: 100%;
 }
 
-.logo {
-    max-width: 200px;
+.logo_container {
+    width: 200px;
     grid-column: 2;
     grid-row: 1;
     place-self: center;
 }
+
+.background_container {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+    height: 100vh;
+    overflow: hidden;
+}
+
+picture img {
+    width: 100%;
+}
+
+
+
 
 
 /* Button Settings Slut*/
@@ -300,10 +305,18 @@ label {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /*
     .logo {
         max-width: 100px;
     }
+*/
 
+}
+
+@media screen and (min-width:667px) {
+    .logo_container {
+        width: 150px;
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -383,32 +396,14 @@ label {
 
     /*    backToTop slut */
 
-    #frontpage picture {
-        z-index: 2;
-    }
-
-    #frontpage button {
-        z-index: 2;
-    }
-
-    .overlay {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--colorOneOpas);
-        z-index: 1;
-    }
-
-    .logo {
-        max-width: 200px;
+    .logo_container {
+        width: 250px;
     }
 }
 
 @media screen and (min-width:1024px) {
-    .logo {
-        max-width: 300px;
+    .logo_container {
+        width: 350px;
     }
 }
 
@@ -457,11 +452,7 @@ label {
         grid-row-gap: 50px;
     }
 
-    .logo {
-        margin-top: 50px;
-        max-width: 500px;
-        grid-column: 2;
-        grid-row: 1;
-        place-self: center;
+    .logo_container {
+        width: 450px;
     }
 }
