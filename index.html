@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Modal vindue, er som standard skjult, men når der klikkepå en ret vises det-->
     <div id="modal">
         <div id="modal-content">
             <img class="modal-billede" src="" alt="">
@@ -18,7 +19,7 @@
 
         </div>
     </div>
-
+    <!-- header hvor splash image vises. Hvilket billede der vises afgøres af størrelsen på skærmen via mediaQ -->
     <header id="frontpage">
         <div class="background_container">
             <picture class="background">
@@ -30,8 +31,6 @@
                 <img src="img/desktop.jpg" alt="italiensk pizzaria logo angelo">
             </picture>
         </div>
-        <div class="overlay"></div>
-        -->
         <div class="logo_container">
             <picture class="logo">
                 <source srcset="img/logo/stortlogo.svg" media="(min-width: 1000px)">
@@ -47,9 +46,11 @@
     </header>
 
     <main>
+        <!-- Knao som sender brugeren tilbage til den primære menu-->
         <div class="backToTop"><img src="img/logo/topArrow.svg" alt="back to top navigation"></div>
         <section id="menuPage">
             <h1>MENU</h1>
+            <!-- Filtreringsknapper til filtrering af ret kategori -->
             <div class="filtrering">
                 <button class="menu-item course1" data-kategori="alle">ALLE</button><span>/</span>
                 <button class="menu-item course2" data-kategori="forretter">FORETTER</button><span>/</span>
@@ -58,8 +59,10 @@
                 <button class="menu-item course5" data-kategori="sideorders">SIDES</button>
             </div>
             <h2></h2>
+            <!--            data container til visning af retter-->
             <div class="data_courses">
             </div>
+            <!--            template til visning af den enkelte ret-->
             <template class="data_template">
                 <div>
                     <img src="" alt="">
@@ -152,7 +155,6 @@
             </article>
         </section>
     </main>
-    <footer></footer>
     <script src="javascript.js"></script>
 </body>
 

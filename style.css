@@ -18,7 +18,7 @@ body {
 
 main {
     background-color: var(--colorOne);
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -50,12 +50,6 @@ li {
     font-size: 2em;
     font-family: var(--fontTwo);
     list-style-type: none;
-}
-
-footer {
-    width: 100vw;
-    height: 100px;
-    background-color: var(--colorThree);
 }
 
 /*gennerelle settings slut*/
@@ -128,10 +122,6 @@ section h1 {
 picture img {
     width: 100%;
 }
-
-
-
-
 
 /* Button Settings Slut*/
 

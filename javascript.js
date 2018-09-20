@@ -1,3 +1,4 @@
+//Globale variabler
 let retter;
 let dest = document.querySelector(".data_courses");
 let kategoriFilter = "alle";
@@ -9,7 +10,6 @@ document.addEventListener("DOMContentLoaded", start);
 function start() {
     hentJson();
     backToTop();
-    //switchLogo();
 }
 
 
@@ -82,15 +82,7 @@ function backToTop() {
     }
 }
 
-/*function switchLogo() {
-    let myLogo = document.querySelector("#frontpage");
 
-    if (window.innerWidth <= 480) {
-        myLogo.querySelector("img").src = "img/logo/lillelogo.svg";
-    } else {
-        myLogo.querySelector("img").src = "img/logo/stortlogo.svg";
-    }
-}*/
 
 function visRetter() {
     let temp = document.querySelector(".data_template");
@@ -111,3 +103,16 @@ function visRetter() {
         }
     })
 }
+
+
+//PROGRAM BENYTTES IKKE
+
+/*function switchLogo() {
+    let myLogo = document.querySelector("#frontpage");
+
+    if (window.innerWidth <= 480) {
+        myLogo.querySelector("img").src = "img/logo/lillelogo.svg";
+    } else {
+        myLogo.querySelector("img").src = "img/logo/stortlogo.svg";
+    }
+}*/
